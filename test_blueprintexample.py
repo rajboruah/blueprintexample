@@ -19,7 +19,7 @@ def test_urls(client):
     r = client.get('/')
     assert r.status_code == 200
 
-    r = client.get('/Rajen')
+    r = client.get('/hello')
     assert r.status_code == 200
 
     r = client.get('/world')
